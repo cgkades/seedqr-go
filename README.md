@@ -3,7 +3,7 @@
 
 This project was created to generate a SeedQR on an air-gapped system for use with.... well anything that can take a SeedQR (i.e. Blockstream Jade).
 
-The idea was to generate a SeedQR on an air-gapped system and save the png into [KeePassXC](https://keepassxc.org/). I also didn't want to load a bunch of python libraries, so having a single binary is also idea.
+The idea was to generate a SeedQR on an air-gapped system and save the png into [KeePassXC](https://keepassxc.org/). I also didn't want to load a bunch of python libraries, so having a single binary is also ideal.
 
 
 ```shell
