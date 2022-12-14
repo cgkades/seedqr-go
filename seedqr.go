@@ -5,10 +5,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	qrcode "github.com/skip2/go-qrcode"
-	bip39 "github.com/tyler-smith/go-bip39"
 	"os"
 	"strings"
+
+	qrcode "github.com/skip2/go-qrcode"
+	bip39 "github.com/tyler-smith/go-bip39"
 )
 
 func getWordListToMap() map[string]string {
@@ -60,7 +61,9 @@ func main() {
 Flags:
 `)
 		flag.PrintDefaults()
-		fmt.Fprint(os.Stderr, `seedqr -o myseed.png -t`)
+		fmt.Fprint(os.Stderr, `Example: seedqr -o myseed -t
+`)
+
 	}
 	flag.Parse()
 	var entropyBitSize int
