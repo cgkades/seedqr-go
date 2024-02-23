@@ -72,7 +72,7 @@ Flags:
 	} else if *mnemonicSize == 24 {
 		entropyBitSize = 256
 	} else {
-		fmt.Errorf("Invalid mnemonic size: %s. Only 12 or 24 are valid", mnemonicSize)
+		_ = fmt.Errorf("invalid mnemonic size: %d. only 12 or 24 are valid", mnemonicSize)
 	}
 
 	words := getWordListToMap()
